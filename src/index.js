@@ -16,6 +16,7 @@ sagaMiddleware.run(rootSaga)
 ReactDOM.render(
   <Provider store={store}>
   <App />
+  {console.warn('store', store.getState())}
 </Provider>,
   document.getElementById('root')
 );

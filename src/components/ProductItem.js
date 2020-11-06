@@ -6,7 +6,7 @@ export default class ProductItem extends Component {
   render() {
     const { product } = this.props
     const addToCartAction = (
-      <button onClick={this.props.onAddToCartClicked} disabled={product.inventory > 0 ? '' : 'disabled'}>
+      <button  style={{marginRight: '5px', float: 'right', color:'white', backgroundColor: `${product.inventory > 0 ? 'green' : 'red'}` }} onClick={this.props.onAddToCartClicked} disabled={product.inventory > 0 ? '' : 'disabled'}>
         {product.inventory > 0 ? 'Add to cart' : 'Sold Out'}
       </button>
     )

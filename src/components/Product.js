@@ -5,7 +5,7 @@ export default class Product extends Component {
   render() {
     const { price, quantity, title, action } = this.props
     return (
-      <div>
+      <div style={{marginLeft: '5px'}} >
         {title} - &#36;{price} {quantity ? `x ${quantity}` : null} {action}
       </div>
     )
