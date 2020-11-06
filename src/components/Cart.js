@@ -32,7 +32,7 @@ class Cart extends Component {
         <div>{nodes}</div>
         <p>Total: &#36;{total}</p>
         <button onClick={checkout} disabled={checkoutAllowed ? '' : 'disabled'}>
-         <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+          <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
         </button>
         <div style={{ color: 'red' }}>{error}</div>
       </div>
